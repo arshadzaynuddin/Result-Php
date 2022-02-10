@@ -2,7 +2,8 @@
 <html>
 <head>
 <title>Result</title>
-</HEAD>
+<link rel="stylesheet" href="/style.css">
+</head>
     <div class="container">
 <?php
 include ("config.php");
