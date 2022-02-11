@@ -12,7 +12,7 @@
 <h3 align="center">Result</h3>
 
     <div class="container">
-<table class="table table-striped table-dark" align="center">
+<table class="table table-bordered" align="center">
 <?php
 include ("config.php");
 $a=$_POST['regno'];
@@ -23,19 +23,19 @@ while($row=pg_fetch_row($r))
 {
     if($a==$row[0])
     {   
-        echo "<tr><td>Name</td><td>$row[1]</td></tr>";
-        echo "<tr>";
+        echo "<tr align=center><td>Name</td><td>$row[1]</td></tr>";
+        echo "<tr align=center>";
         echo "<td>Register No</td>";
         echo "<td> $row[0]</td>";
         echo "</tr>";
 
        
-        echo "<tr>";
-        echo "<td>Mark</td>";
+        echo "<tr align=center>";
+        echo "<td >Mark</td>";
         echo "<td> $row[2]</td>";
         echo "</tr>";
 
-        echo "<tr>";
+        echo "<tr align=center>";
         echo "<td>Grade</td>";
         echo "<td> $row[3]</td>";
         echo "</tr>";
